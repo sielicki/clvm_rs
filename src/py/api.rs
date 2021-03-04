@@ -9,10 +9,7 @@ use super::arc_allocator::ArcAllocator;
 use super::glue::{_py_run_program, _serialize_from_bytes, _serialize_to_bytes};
 use super::native_op_lookup::GenericNativeOpLookup;
 use super::py_node::PyNode;
-use super::run_program::{
-    __pyo3_get_function_deserialize_and_run_program,
-    STRICT_MODE,
-};
+use super::run_program::{__pyo3_get_function_deserialize_and_run_program, STRICT_MODE};
 use crate::cost::Cost;
 
 type AllocatorT<'a> = ArcAllocator;

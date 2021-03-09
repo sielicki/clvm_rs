@@ -6,6 +6,7 @@ use crate::int_allocator::IntAllocator;
 
 use super::py_int_allocator::PyIntAllocator;
 
+#[derive(Clone)]
 pub struct NativeView {
     pub arena: PyObject, // PyCell<PyIntAllocator>,
     pub ptr: <IntAllocator as Allocator>::Ptr,
